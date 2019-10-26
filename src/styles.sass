@@ -1,0 +1,56 @@
+html, body
+  overflow: hidden
+
+.no-select, img, .nav
+  user-select: none
+
+a
+  text-transform: none
+  text-decoration: none
+
+  &:hover,
+  &.active
+    text-transform: none
+    text-decoration: none
+  
+.fixed-background
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  filter: blur(6px)
+  transform: scale(1.03)
+  
+.pointer
+  cursor: pointer
+
+.device-height
+  height: 100vh
+
+.link:hover
+  .block-text
+    display: none
+  .image
+    filter: none
+
+.image
+  border-radius: 24px
+  filter: blur(2px)
+  box-shadow: 0 0 20px 5px rgba(210, 21, 21, 0.7)
+
+.block-text
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  color: #9c0101
+  font-size: 30px
+  font-weight: bold
+  text-transform: uppercase
+  text-shadow: 0px 0px 13px #fff, 0 0 25px #fff, 0 0 8px #fff
+
+  
+// venom
+$venom-color-white: #dcdfe9
+$venom-color-dark: #547888
+$page-border: 0

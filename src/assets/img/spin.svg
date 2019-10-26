@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 268.701 268.701">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #dcdfe9;
+      }
+
+      .cls-1 {
+        stroke-width: 9px;
+      }
+
+      .cls-2 {
+        stroke-linecap: square;
+        stroke-width: 23px;
+        stroke-dasharray: 127;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="spin" transform="translate(-165.721 -165.65)">
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1" transform="translate(200 200)">
+      <circle class="cls-3" cx="100" cy="100" r="100"/>
+      <circle class="cls-4" cx="100" cy="100" r="95.5"/>
+    </g>
+    <g id="Ellipse_2" data-name="Ellipse 2" class="cls-2" transform="translate(434.421 300) rotate(135)">
+      <circle class="cls-3" cx="95" cy="95" r="95"/>
+      <circle class="cls-4" cx="95" cy="95" r="81.5"/>
+    </g>
+  </g>
+</svg>

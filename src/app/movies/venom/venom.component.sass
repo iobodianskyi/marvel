@@ -1,0 +1,136 @@
+@import './../../../styles.sass';
+
+@keyframes spin
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+  
+.fixed-background
+  background: url(/assets/img/venom-wall.png) center center
+  background-size: cover
+
+.background
+  position: absolute
+  top: #{$page-border}px
+  right: #{$page-border}px
+  bottom: #{$page-border}px
+  left: #{$page-border}px
+  border-radius: 0px
+  background: url(/assets/img/venom-background-3.png) center center
+  background-size: cover
+
+.nav
+  width: 50%
+  height: 70px
+
+  .nav-item
+    margin: 0 10px
+    cursor: pointer
+    color: $venom-color-dark
+
+    &.active, &:hover
+      color: $venom-color-white
+
+  .logo
+    width: 40px
+    height: 40px
+
+.nav-right
+  position: absolute
+  top: calc(100vh - #{$page-border * 2}px)
+  right: 0
+  width: calc(100vh - #{$page-border * 2}px)
+  transform: rotate(90deg)
+  transform-origin: top right
+
+  .nav-item
+    margin: 0 20px
+
+.main-title
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  margin-left: 50px
+  color: $venom-color-white
+
+  .title-sm
+    font-size: 11px
+    text-transform: uppercase
+    letter-spacing: 14px
+
+  .title-lg
+    font-size: 130px
+    line-height: 120px
+    letter-spacing: 5px
+
+.date-release
+  position: absolute
+  bottom: 40px
+  right: 20%
+  color: $venom-color-white
+  
+  .date
+    font-size: 60px
+    line-height: 60px
+
+  .year
+    font-size: 20px
+    margin-left: 20px
+    color: $venom-color-dark
+
+  .year-underline
+    width: 100%
+    height: 2px
+    background: $venom-color-dark
+  
+.watch-trailer-block
+  position: absolute
+  left: 50px
+  bottom: 50px
+  color: $venom-color-dark
+  letter-spacing: 2px
+  font-size: 16px
+
+  .play
+
+    .spin
+      width: 50px
+      height: 50px
+
+      #spin
+        animation: spin 1s linear infinite
+
+        .cls-1,
+        .cls-2,
+        .cls-4 
+          fill: none
+
+        .cls-1,
+        .cls-2
+          stroke: #547888
+
+        .cls-1
+          stroke-width: 9px
+
+        .cls-2
+          stroke-linecap: square
+          stroke-width: 23px
+          stroke-dasharray: 127
+
+        .cls-3
+          stroke: none
+      
+      #play-btn
+        width: 20px
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        .cls-1
+          fill: #547888
+    
+.share
+  .share-img
+    width: 20px
